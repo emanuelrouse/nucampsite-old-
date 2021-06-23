@@ -55,7 +55,13 @@
                 <div class="modal-content">
                     <div class="modal-header bg-info text-white">
                         <h3 class="modal-title">Resevere a Campsite</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                        >
+                            &times;
+                        </button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -96,23 +102,49 @@
                                     </div>
                                 </div>
 
-                                <div class="row form-group ">
-                                    <label for="campsiteType" class="col-sm-6 col-form-label">Campsite Type</label>
-                                    <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                <div class="row form-group">
+                                    <label class="col-sm-6 col-form-label"
+                                        >Campsite Type</label
+                                    >
+                                    <div
+                                        class="col-2 btn-group btn-group-toggle"
+                                        data-toggle="buttons"
+                                    >
                                         <label class="btn btn-success active">
-                                        <input class="" type="radio" name="options" id="option1"> Tent
-                                    </label>
-                                    <label class="btn btn-primary">
-                                      <input type="radio" name="options" id="option2"> RV
-                                    </label>
+                                            <input
+                                                class=""
+                                                type="radio"
+                                                name="siteType"
+                                                id="siteTent"
+                                            />
+                                            Tent
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input
+                                                type="radio"
+                                                name="siteType"
+                                                id="siteRV"
+                                            />
+                                            RV
+                                        </label>
                                     </div>
                                 </div>
 
-                                <div class="form-row">
-                                    <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary ml-1">Search</button>
+                                <div class="form-group row">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-dismiss="modal"
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary ml-1"
+                                    >
+                                        Search
+                                    </button>
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -138,7 +170,11 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav" id="nucampNavbar">
                         <span class="navbar-text ml-auto">
-                            <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <a
+                                role="button"
+                                data-toggle="modal"
+                                data-target="#loginModal"
+                            >
                                 <i class="fa fa-sign-in"></i> Login
                             </a>
                         </span>
@@ -176,37 +212,75 @@
                 </div>
             </div>
         </nav>
-        
+
         <!-- Login Modal -->
         <div id="loginModal" class="modal fade" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title">Login</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                        >
+                            &times;
+                        </button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-12">
-                                        <label class="sr-only" for="loginEmail">Email address</label>
-                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                        <label class="sr-only" for="loginEmail"
+                                            >Email address</label
+                                        >
+                                        <input
+                                            type="email"
+                                            class="form-control form-control-sm"
+                                            id="loginEmail"
+                                            placeholder="Enter email"
+                                        />
                                     </div>
                                     <div class="form-group col-12">
-                                        <label class="sr-only" for="loginPassword">Password</label>
-                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                        <label
+                                            class="sr-only"
+                                            for="loginPassword"
+                                            >Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            class="form-control form-control-sm"
+                                            id="loginPassword"
+                                            placeholder="Password"
+                                        />
                                     </div>
                                     <div class="col">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox">
-                                            <label class="form-check-label"> Remember me</label>
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                            />
+                                            <label class="form-check-label">
+                                                Remember me</label
+                                            >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary btn-sm ml-auto"
+                                        data-dismiss="modal"
+                                    >
+                                        Cancel
+                                    </button>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary btn-sm ml-1"
+                                    >
+                                        Sign in
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -290,49 +364,111 @@
         <div class="container">
             <div class="row row-content">
                 <div class="col-md-8 mx-auto">
-                    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                    <div
+                        id="homeCarousel"
+                        class="carousel slide"
+                        data-ride="carousel"
+                    >
                         <!-- Carousel long bars -->
                         <ol class="carousel-indicators">
-                            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#homeCarousel" data-slide-to="1"></li>
-                            <li data-target="#homeCarousel" data-slide-to="2"></li>
+                            <li
+                                data-target="#homeCarousel"
+                                data-slide-to="0"
+                                class="active"
+                            ></li>
+                            <li
+                                data-target="#homeCarousel"
+                                data-slide-to="1"
+                            ></li>
+                            <li
+                                data-target="#homeCarousel"
+                                data-slide-to="2"
+                            ></li>
                         </ol>
                         <!-- Innards of Carousel -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" class="d-block w-100">
+                                <img
+                                    src="/img/breadcrumb-trail.jpg"
+                                    alt="Breadcrumb Trail Campground"
+                                    class="d-block w-100"
+                                />
                                 <div class="carousel-caption">
                                     <h3>Breadcrumb Trail Campground</h3>
-                                    <p class="d-none d-sm-block">Let Nucamp Be your guide to this off-the-beaten-path, hike-in-only campground.</p>
+                                    <p class="d-none d-sm-block">
+                                        Let Nucamp Be your guide to this
+                                        off-the-beaten-path, hike-in-only
+                                        campground.
+                                    </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="/img/react-lake.jpg" alt="React Lack Campground" class="d-block w-100">
+                                <img
+                                    src="/img/react-lake.jpg"
+                                    alt="React Lack Campground"
+                                    class="d-block w-100"
+                                />
                                 <div class="carousel-caption">
                                     <h3>React Lake Campground</h3>
-                                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, This campground on the shores of the pristine React Lake is a fovorite for fly fishers.</p>
+                                    <p class="d-none d-sm-block">
+                                        Nestled in the foothills of the Chrome
+                                        Mountains, This campground on the shores
+                                        of the pristine React Lake is a fovorite
+                                        for fly fishers.
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="/img/chrome-river.jpg" alt="Chrome River Campground" class="d-block w-100">
+                                <img
+                                    src="/img/chrome-river.jpg"
+                                    alt="Chrome River Campground"
+                                    class="d-block w-100"
+                                />
                                 <div class="carousel-caption">
                                     <h3>Chrome River</h3>
-                                    <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-grown firs at this enchating spot by the Chrome River.</p>
+                                    <p class="d-none d-sm-block">
+                                        Spend a few sunny days and starry nights
+                                        beneath a canopy of old-grown firs at
+                                        this enchating spot by the Chrome River.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <!-- Previous Carousel Button -->
-                        <a href="#homeCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                        <a
+                            href="#homeCarousel"
+                            class="carousel-control-prev"
+                            role="button"
+                            data-slide="prev"
+                        >
                             <span class="carousel-control-prev-icon"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                         <!-- Next Carousel Button -->
-                        <a href="#homeCarousel" class="carousel-control-next" role="button" data-slide="next">
+                        <a
+                            href="#homeCarousel"
+                            class="carousel-control-next"
+                            role="button"
+                            data-slide="next"
+                        >
                             <span class="carousel-control-next-icon"></span>
                             <span class="sr-only">Next</span>
                         </a>
-
+                        <div class="btn-group" id="carouselButton">
+                            <button
+                                class="btn btn-danger btn-sm"
+                                id="carouselPause"
+                            >
+                                <i class="fa fa-pause"> </i>
+                            </button>
+                            <button
+                                class="btn btn-danger btn-sm"
+                                id="carouselPlay"
+                            >
+                                <i class="fa fa-play"> </i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -524,7 +660,16 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
+        <script>
+            $(function () {
+                $(".carousel").carousel({ interval: 2000 });
+                $(".carouselPause").click(function () {
+                    $(".carousel").carousel("pause");
+                });
+                $("#carouselPlay").click(function () {
+                    $(".carousel").carousel("cycle");
+                });
+            });
+        </script>
     </body>
 </html>
