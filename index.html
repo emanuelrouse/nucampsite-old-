@@ -101,7 +101,7 @@
                                         />
                                     </div>
                                 </div>
-
+                                <!-- Campsite Type -->
                                 <div class="row form-group">
                                     <label class="col-sm-6 col-form-label"
                                         >Campsite Type</label
@@ -129,7 +129,7 @@
                                         </label>
                                     </div>
                                 </div>
-
+                                <!-- Cancel and Search Buttons -->
                                 <div class="form-group row">
                                     <button
                                         type="button"
@@ -364,6 +364,7 @@
         <div class="container">
             <div class="row row-content">
                 <div class="col-md-8 mx-auto">
+                    <!-- Carousel -->
                     <div
                         id="homeCarousel"
                         class="carousel slide"
@@ -662,10 +663,11 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>
             $(function () {
-                $(".carousel").carousel({ interval: 2000 });
-                $(".carouselPause").click(function () {
+                $(".carousel").carousel({ interval: 2000, pause: "false" });
+                $("#carouselPause").click(function () {
                     $(".carousel").carousel("pause");
                 });
+                // Add carouselPlay functionallity
                 $("#carouselPlay").click(function () {
                     $(".carousel").carousel("cycle");
                 });
