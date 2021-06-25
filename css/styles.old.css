@@ -38,6 +38,12 @@ site-footer {
     background-color: #901cad;
 }
 
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px;
+}
+
 .navbar-dark {
     background-color: #901cad;
 }
@@ -55,10 +61,4 @@ site-footer {
     right: 0;
     bottom: 0;
     z-index: 100;
-}
-
-.tab-content {
-    border: 1px solid #ddd;
-    border-top: none;
-    padding: 10px;
 }
